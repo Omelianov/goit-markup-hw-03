@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 :root{
     --background-color: #F5F5F5;
     --font-family: #757575;
@@ -23,11 +33,29 @@
     letter-spacing: 0.03em;
 }
 
+/* Утилы */
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .header-bg {
     background-color: var(--white-color);
 }
 
 /* Logo */
+
+.container {
+    width: 1600px;
+    height: 80px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
 .web-blue, .studio-black, .studio-white {
     color: var(--accent-color);
@@ -40,17 +68,33 @@
 
 .a-decorat-none {
     text-decoration: none;
+    margin-left: 215px;
 }
 
 .studio-black {
     color: var(--studio-logo);
 }
 
-.list {
-    list-style: none;
+/* site-nav and auth-nav*/
+
+.site-nav {
+    display: flex;
+    margin-left: 94px;
 }
 
-/* site-nav and auth-nav*/
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: 215px;
+}
+.auth-nav .item + .item {
+    margin-left: 50px;
+}
+
 .site-nav .link,
 .auth-nav .link {
     color: var(--title-text-color);
@@ -63,8 +107,16 @@
     cursor: pointer;
 }
 
+.site-nav .link {
+display: block;
+padding-top: 33px;
+padding-bottom: 33px;
+}
+
 .auth-nav .link {
     color: var(--font-family);
+    padding-top: 32px;
+    padding-bottom: 32px;   
 }
 
 .site-nav .link:hover,
@@ -78,6 +130,16 @@
 /* Section замовити послугу button */
 .hero {
     background-color: var(--background-hero-footer);
+    text-align: center;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    
 }
 
 .hero-title {
@@ -86,9 +148,14 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    height: 120px;
+    margin-top: 200px;
+    margin-right: 452px;
+    margin-bottom: 30px;
+    margin-left: 452px;
 }
 
 .button-posluga {
@@ -102,15 +169,43 @@
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-  }
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+    display: block;
+    margin-top: 30px;
+    margin-right: 692px;
+    margin-bottom: 170px;
+    margin-left: 692px;
+    padding: 0;
+    border: 0;
+}
+
   .button-posluga:hover,
   .button-posluga:focus {
       background-color: #188CE8;
   }
+ 
 
    /* <!-- Section особливости --> */
 
-   .features .section-work {
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    height: 98px;
+    margin-left: 215px;
+    margin-right: 215px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.features-list .item {
+    width: 270px;
+}
+
+.features .section-work {
     background-color: var(--background-color)
    }
 
@@ -157,6 +252,21 @@
 }
 
 /* Section Чим ми займаємося и h2 наша команда */
+
+.section-work {
+    width: 1170px;
+    height: 386px; 
+    margin-top: 94px;
+    margin-right: 215px;
+    margin-left: 215px;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .section-title, .title,
 .title-h2-team
 {
@@ -171,10 +281,21 @@
 
 .section-team {
     background-color: #F5F4FA;
+    width: 1600px;
+    height: 648px;
+    margin-top: 94px;
+}
+
+.list .section-team {
+
+
 }
 
 .member-team {
-background-color: #fff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .title-h3-igor,
