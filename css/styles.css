@@ -138,6 +138,7 @@ padding-bottom: 33px;
     display: flex;
     flex-direction: column;
     align-items:center;
+    margin-left: 10px;
     
     
 }
@@ -259,6 +260,7 @@ padding-bottom: 33px;
     margin-top: 94px;
     margin-right: 215px;
     margin-left: 215px;
+    margin-bottom: 94px;
 }
 
 .work-list {
@@ -276,48 +278,112 @@ padding-bottom: 33px;
     line-height: 1.17;
     text-align: center;
 }
+.section-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 366px;
+    height: 42px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+}
 
 /* Section Наша команда */
 
 .section-team {
     background-color: #F5F4FA;
+}
+
+.container-team {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 1600px;
     height: 648px;
     margin-top: 94px;
+    outline: 2px solid red;
 }
 
-.list .section-team {
-
-
+.title-h2-team {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    width: 264px;
+    height: 42px;
 }
+
+.team-list  {
+    display: flex;
+    justify-content:space-between;
+    width: 1170px;
+    height: 368px;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
 
 .member-team {
     background-color: #fff;
-    display: flex;
+    display: block;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items:center;
+    width: 270px;
+    height: 368px;
+    align-items: center;
+    align-content: center;
 }
 
-.title-h3-igor,
-.title-h3-olga,
-.title-h3-micola,
-.title-h3-mihailo{
+.employer-name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
 
-.product-designer,
-.frontend-developer,
-.marketing,
-.designer {
+.duty {
      color: var(--font-family);
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
 }
 
 /* Section footer */
+
+.conteiner-address {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 1600px;
+    height: 252px;  
+}
+
+.a-decorat-none-footer {
+    width: 145px;
+    height: 31px;
+    margin-top: 60px;
+    margin-left: 1240px;
+    margin-bottom: 161px;
+    margin-left: 215px;
+}
+
+.list-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 231px;
+    height: 81px;
+    margin-top: 20px;
+    margin-right: 1154px;
+    margin-bottom: 60px;
+    margin-left: 215px;
+}
+
 
 .footer-decoration {
     background-color: var(--background-hero-footer);
