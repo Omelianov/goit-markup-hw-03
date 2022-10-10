@@ -138,7 +138,7 @@ padding-bottom: 33px;
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin-left: 10px;
+    margin-left: 5px;
     
     
 }
@@ -292,6 +292,8 @@ padding-bottom: 33px;
 
 .section-team {
     background-color: #F5F4FA;
+    width: 1600px;
+    height: 648px;
 }
 
 .container-team {
@@ -302,7 +304,6 @@ padding-bottom: 33px;
     width: 1600px;
     height: 648px;
     margin-top: 94px;
-    outline: 2px solid red;
 }
 
 .title-h2-team {
@@ -368,8 +369,8 @@ padding-bottom: 33px;
     height: 31px;
     margin-top: 60px;
     margin-left: 1240px;
-    margin-bottom: 161px;
     margin-left: 215px;
+    text-decoration-line: none;
 }
 
 .list-address {
@@ -382,11 +383,14 @@ padding-bottom: 33px;
     margin-right: 1154px;
     margin-bottom: 60px;
     margin-left: 215px;
+
 }
 
 
 .footer-decoration {
     background-color: var(--background-hero-footer);
+    width: 1600px;
+    height: 252px;
 }
 
 .studio-white {
