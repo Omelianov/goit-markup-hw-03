@@ -476,11 +476,41 @@ padding-bottom: 33px;
 
 /* Portfolio cards */
 
+.portfolio-cards {
+display: flex;
+flex-wrap: wrap;
+margin-right: 30px;
+
+}
+
+.portfolio-items {
+    display: flex;
+    flex-direction: column;
+    text-align:left;
 
 
+    width: 370px;
+    height: 404px;
 
-.title-port
- {
+    outline: 2px solid red;
+}
+
+.card-caption {
+    display: flex;
+    flex-direction: column;
+    
+    width: 322px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+
+    outline: 2px solid burlywood;
+}
+
+
+.title-portf {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -488,16 +518,13 @@ padding-bottom: 33px;
     letter-spacing: 0.06em;
 }
 
-.text-comp,
-.text-poster,
-.text-seafood,
-.text-prime,
-.text-boxes,
-.text-inspirations,
-.text-book,
-.text-bookmark,
-.text-notebook {
+.text-portf {
     color: var(--font-family);
     font-size: 16px;
     line-height: 1.9;
+    width: 322px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 3px;
+    
 }
