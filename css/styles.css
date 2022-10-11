@@ -9,13 +9,13 @@ html {
 }
 
 :root{
-    --background-color: #F5F5F5;
+    --background-color-primary: #fff;
+    --background-color-secondary: #F5F4FA;
     --font-family: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --white-color: #FFFFFF;
     --white-color-60: rgba(255,255,255,0.6);
-    --white-background-button: #F5F4FA;
     --studio-logo:#000000;
     --background-hero-footer: #2F303A;
 }
@@ -25,12 +25,13 @@ html {
 /* синий цвет #2196F3 */
 /* белый цвет #FFFFFF */
 /* белый цвет #FFFFFF */
-/* background color F5F5F5 */
+
 
 .body {
     color: var(--font-family);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+    background-color: var(--background-color-primary);
 }
 
 /* Утилы */
@@ -42,7 +43,7 @@ html {
 }
 
 .header-bg {
-    background-color: var(--white-color);
+    background-color: var(--background-color-primary);
 }
 
 /* Logo */
@@ -206,10 +207,6 @@ padding-bottom: 33px;
     width: 270px;
 }
 
-.features .section-work {
-    background-color: var(--background-color)
-   }
-
 .features .title-h2-merits {
     color: var(--title-text-color);
     font-weight: 700;
@@ -291,7 +288,7 @@ padding-bottom: 33px;
 /* Section Наша команда */
 
 .section-team {
-    background-color: #F5F4FA;
+    background-color: var(--background-color-secondary);
     width: 1600px;
     height: 648px;
 }
@@ -327,7 +324,7 @@ padding-bottom: 33px;
 
 
 .member-team {
-    background-color: #fff;
+    background-color: var(--background-color-primary);
     display: block;
     flex-direction: column;
     justify-content: center;
@@ -386,7 +383,6 @@ padding-bottom: 33px;
 
 }
 
-
 .footer-decoration {
     background-color: var(--background-hero-footer);
     width: 1600px;
@@ -420,22 +416,54 @@ padding-bottom: 33px;
 
 /* Main*/
 
-.section-sort-buttons {
-    background-color: var(--background-color);
+.portfolio {
+    background-color: var(--background-color-primary);
+}
+
+.container-portfolio {
+    width: 1170px;
+    height: 1360px;
+    margin-top: 94px;
+    margin-right: 215px;
+    margin-bottom: 94px;
+    margin-left: 215px;
+
+    outline: 3px solid red;
 }
 
 .port-buttons {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    width: 575px;
+    height: 54px;
+    margin-right: auto;
+    margin-bottom: 34px;
+    margin-left: auto;
+    margin-top: 94px;
     color: var(--font-family);
-    background-color: #F5F4FA
+
+
+    outline: 3px solid green;
+}
+
+.item-sort {
+    display: flex;
+    height: 38px;
+    margin: auto;
 }
 
 .sort {
+    display: flex;
+    text-align: center;
+    width: auto;
     cursor: pointer;
     font-family: Roboto, sans-serif;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    
 }
 
 .sort:hover,
@@ -444,18 +472,14 @@ padding-bottom: 33px;
     background-color: var(--accent-color)
 }
 
-.portfolio {
-    background-color: var(--white-color);
-}
 
-.title-h2-comp,
-.title-h2-poster,
-.title-h2-seafood,
-.title-h2-prime,
-.title-h2-boxes,
-.title-h2-inspirations,
-.title-h2-book,
-.title-h2-notebook
+
+/* Portfolio cards */
+
+
+
+
+.title-port
  {
     color: var(--title-text-color);
     font-weight: 700;
