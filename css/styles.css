@@ -49,8 +49,11 @@ html {
 /* Logo */
 
 .container {
-    width: 1600px;
-    height: 80px;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 0 auto;
+    
 }
 
 .main-nav {
@@ -434,7 +437,6 @@ padding-bottom: 33px;
 .port-buttons {
     display: flex;
     justify-content: space-between;
-    border-radius: 4px;
     width: 575px;
     height: 54px;
     margin-right: auto;
@@ -442,9 +444,6 @@ padding-bottom: 33px;
     margin-left: auto;
     margin-top: 94px;
     color: var(--font-family);
-
-
-    outline: 3px solid green;
 }
 
 .item-sort {
@@ -454,17 +453,20 @@ padding-bottom: 33px;
 }
 
 .sort {
-    display: flex;
-    text-align: center;
     width: auto;
     cursor: pointer;
+    border-radius: 4px;
     font-family: Roboto, sans-serif;
     text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    
+    padding-left: 22px;
+    padding-right: 22px;
+    background-color: var(--background-color-secondary)
 }
+
+
 
 .sort:hover,
 .sort:focus {
@@ -480,6 +482,9 @@ padding-bottom: 33px;
 display: flex;
 flex-wrap: wrap;
 margin-right: 30px;
+margin-top: 30px;
+margin-left: 30px;
+margin-bottom: 30px;
 
 }
 
@@ -496,15 +501,15 @@ margin-right: 30px;
 }
 
 .card-caption {
-    display: flex;
-    flex-direction: column;
+    display: block;
+ 
     
     width: 322px;
     height: 70px;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: auto;
-    margin-bottom: 20px;
-    margin-left: auto;
+    
+    margin-right: auto;
 
     outline: 2px solid burlywood;
 }
