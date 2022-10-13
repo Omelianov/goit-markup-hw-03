@@ -47,14 +47,10 @@ ol {
   list-style: none;
 }
 
-.header-bg {
-  background-color: var(--background-color-primary);
-}
-
 /* Logo */
 
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -63,6 +59,8 @@ ol {
 .main-nav {
   display: flex;
   align-items: center;
+  background-color: var(--background-color-primary);
+  border-bottom: 1px solid #ececec;
 }
 
 .web-blue,
@@ -99,7 +97,7 @@ ol {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  margin-right: 215px;
+  margin-right: auto;
 }
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -140,18 +138,15 @@ ol {
 /* Section замовити послугу button */
 
 .container-hero {
-  margin-left: auto;
-  margin-right: auto;
-}
-.hero {
-  background-color: var(--background-hero-footer);
   text-align: center;
-  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.hero {
+  background-color: var(--background-hero-footer);
 }
 
 .hero-title {
@@ -182,7 +177,6 @@ ol {
   top: 430px;
   display: block;
   margin-top: 30px;
-
   padding: 0;
   border: 0;
 }
@@ -195,7 +189,8 @@ ol {
 /* <!-- Section особливости --> */
 
 .container-features {
-  margin: 94px 215px;
+  margin: 94px auto;
+  width: 1170px;
 }
 
 .features-list {
@@ -259,16 +254,13 @@ ol {
   justify-content: space-between;
 }
 
-.section-title,
-.title,
-.title-h2-team {
+.section-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-}
-.section-title {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 94px;
@@ -294,6 +286,10 @@ ol {
 }
 
 .title-h2-team {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -346,14 +342,12 @@ ol {
 .conteiner-address {
   display: flex;
   flex-direction: column;
-
   height: 252px;
 }
 
 .a-decorat-none-footer {
   height: 31px;
   margin-top: 60px;
-
   margin-left: 215px;
   text-decoration-line: none;
 }
@@ -362,10 +356,8 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: left;
-
   height: 81px;
   margin-top: 20px;
-
   margin-bottom: 60px;
   margin-left: 215px;
 }
@@ -409,7 +401,7 @@ ol {
 .container-portfolio {
   width: 1170px;
   height: 1360px;
-  margin-top: 94px;
+  padding-top: 94px;
   margin-right: 215px;
   margin-bottom: 94px;
   margin-left: 215px;
@@ -438,9 +430,9 @@ ol {
 .sort {
   width: auto;
   cursor: pointer;
+  border: none;
   border-radius: 4px;
   font-family: Roboto, sans-serif;
-  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -459,10 +451,7 @@ ol {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 30px;
-  margin-top: 30px;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 .portfolio-items {
